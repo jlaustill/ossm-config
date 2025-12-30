@@ -34,14 +34,19 @@ typedef enum {
     CMD_PRESSURE_PRESET = 0x09
 } EOssmCommand;
 
-// Error codes
+// Error codes (must match OSSM firmware CommandHandler.h ECommandError)
 typedef enum {
     ERR_OK = 0x00,
     ERR_UNKNOWN_CMD = 0x01,
-    ERR_INVALID_SPN = 0x02,
-    ERR_INVALID_INPUT = 0x03,
-    ERR_INVALID_PARAM = 0x04,
-    ERR_SAVE_FAILED = 0x05
+    ERR_PARSE_FAILED = 0x02,
+    ERR_UNKNOWN_SPN = 0x03,
+    ERR_INVALID_TEMP_INPUT = 0x04,
+    ERR_INVALID_PRESSURE_INPUT = 0x05,
+    ERR_INVALID_NTC_PARAM = 0x06,
+    ERR_INVALID_TC_TYPE = 0x07,
+    ERR_INVALID_QUERY_TYPE = 0x08,
+    ERR_SAVE_FAILED = 0x09,
+    ERR_INVALID_PRESET = 0x0A
 } EOssmError;
 
 // SPN Categories
