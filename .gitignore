@@ -1,6 +1,8 @@
-# Build artifacts
-build/
-ossm-config
+# Dependencies
+node_modules/
+
+# Build output
+dist/
 
 # Editor files
 *.swp
@@ -9,15 +11,10 @@ ossm-config
 .vscode/
 .idea/
 
-# Debug files
-*.dSYM/
-core
-
 # OS files
 .DS_Store
 Thumbs.db
 
-# Python cache
-__pycache__/
-*.pyc
-.pytest_cache/
+# Logs
+*.log
+npm-debug.log*
